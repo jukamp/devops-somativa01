@@ -10,19 +10,19 @@ on:
 
 jobs:
     build-job:
-        runs-on: ubunto-latest
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - run: python3 -v
 
     teste-job:
-        runs-on: ubunto-latest
+        runs-on: ubuntu-latest
         steps:
-            - uses: actions/chechout@v3
+            - uses: actions/checkout@v3
             - run: python3 helloworld.py
 
     deploy-job:
-        runs-on: ubunto-latest
+        runs-on: ubuntu-latest
         steps:
-            - uses: actions/chechout@v3
+            - uses: actions/checkout@v3
             - run: echo 'Finalizado!'
