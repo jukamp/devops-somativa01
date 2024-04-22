@@ -19,7 +19,7 @@ jobs:
         runs-on: ubunto-latest
         steps:
             - uses: actions/chechout@v3
-            - run: pyhton3 helloworld.py
+            - run: python3 helloworld.py
 
     deploy-job:
         runs-on: ubunto-latest
